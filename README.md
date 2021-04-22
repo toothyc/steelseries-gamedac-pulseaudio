@@ -1,11 +1,12 @@
 # steelseries-gamedac-pulseaudio
 Enable ChatMix and surround sound on the Steelseries Arctis Pro using PulseAudio profile files. Based off [the work by Witek094](https://github.com/Witek094/steelseries-arctis-pro-wireless-pulseaudio-profile)
-## Installation
-Copy 91-pulseaudio-steelseries-gamedac.rules to /etc/udev/rules.d 
 
-Copy steelseries-gamedac-usb-audio.conf to /usr/share/pulseaudio/alsa-mixer/profile-sets 
+## Installation on Fedora 34 with pipewire
+Copy 91-pipewire-steelseries-gamedac.rules to /etc/udev/rules.d 
 
-Copy steelseries-gamedac-input.conf, steelseries-gamedac-output-chat.conf, steelseries-gamedac-output-game.conf to /usr/share/pulseaudio/alsa-mixer/paths/ 
+Copy steelseries-gamedac-usb-audio.conf to /usr/share/alsa-card-profile/mixer/profile-sets/
+
+Copy Game-Output-Channel.conf, Chat-Output-Channel.conf to /usr/share/alsa-card-profile/mixer/paths/
 
 
 
